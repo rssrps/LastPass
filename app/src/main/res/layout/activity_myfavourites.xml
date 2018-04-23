@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_myfavourites"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/eat_background1"
+    tools:context="com.example.raman.lastpass_project.myfavourites">
+
+    <TextView
+        android:text="My Favourites"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="31sp"
+        android:fontFamily="serif-monospace"
+        android:layout_marginTop="15dp"
+        android:id="@+id/textView18"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+    <TextView
+        android:text="favourite2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:textSize="22sp"
+        android:fontFamily="casual"
+        android:textStyle="bold"
+        android:id="@+id/fav2"
+        android:layout_below="@+id/fav1"
+        android:layout_alignStart="@+id/fav1" />
+
+    <TextView
+        android:text="favourite3"
+        android:textSize="22sp"
+        android:fontFamily="casual"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="41dp"
+        android:id="@+id/fav3"
+        android:layout_below="@+id/fav2"
+        android:layout_alignStart="@+id/fav2" />
+
+    <TextView
+        android:text="favourite1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:fontFamily="casual"
+        android:textStyle="bold"
+        android:layout_marginTop="87dp"
+        android:id="@+id/fav1"
+        android:layout_below="@+id/textView18"
+        android:layout_alignStart="@+id/textView18" />
+</RelativeLayout>

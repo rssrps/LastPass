@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_staylist"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@drawable/eat_background1"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.raman.lastpass_project.staylist">
+
+    <ImageView
+        android:layout_height="80dp"
+        app:srcCompat="@drawable/stay"
+        android:layout_marginStart="29dp"
+        android:id="@+id/imageView"
+        android:layout_width="80dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Stay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/stayheading"
+        android:textSize="32sp"
+        android:fontFamily="casual"
+        android:textStyle="bold"
+        android:layout_marginStart="20dp"
+        android:layout_alignBottom="@+id/imageView"
+        android:layout_toEndOf="@+id/imageView"
+        android:layout_marginBottom="12dp" />
+
+    <Button
+        android:text="Sairaj  Palace"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="73dp"
+        android:textStyle="bold"
+        android:fontFamily="casual"
+        android:id="@+id/sairaj"
+        android:alpha="0.6"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="Malhar  Regency"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:fontFamily="casual"
+        android:textStyle="bold"
+        android:alpha="0.6"
+        android:id="@+id/malhar"
+        android:layout_below="@+id/sairaj"
+        android:layout_alignStart="@+id/sairaj" />
+
+    <Button
+        android:text="Shalimar  Residency"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="casual"
+        android:alpha="0.6"
+        android:layout_marginTop="47dp"
+        android:id="@+id/shalimar"
+        android:textStyle="bold"
+        android:layout_below="@+id/malhar"
+        android:layout_alignStart="@+id/malhar" />
+</RelativeLayout>

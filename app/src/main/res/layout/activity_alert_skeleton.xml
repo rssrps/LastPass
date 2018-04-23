@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_alert_skeleton"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:background="@drawable/eat_background1"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.raman.lastpass_project.alert_skeleton">
+
+    <ImageView
+        app:srcCompat="@drawable/emergency1"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/alert_image"
+        android:layout_width="75dp"
+        android:layout_height="75dp" />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:srcCompat="@drawable/hospital_icon"
+        android:layout_below="@+id/hospital_heading"
+        android:layout_alignStart="@+id/hospital_heading"
+        android:layout_marginStart="11dp"
+        android:id="@+id/hospitalicon" />
+
+    <Button
+        android:text="IGM"
+        android:layout_height="40dp"
+        android:layout_below="@+id/hospitalicon"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="14dp"
+        android:textColor="#A52A2A"
+        android:alpha="0.6"
+        android:layout_marginTop="40dp"
+        android:id="@+id/igm"
+        android:layout_width="140dp" />
+
+    <Button
+        android:text="NAVJEEVAN"
+        android:layout_height="40dp"
+        android:layout_marginTop="14dp"
+        android:id="@+id/navjeevan"
+        android:textColor="#A52A2A"
+        android:alpha="0.6"
+        android:layout_below="@+id/igm"
+        android:layout_alignStart="@+id/igm"
+        android:layout_width="140dp" />
+
+    <Button
+        android:text="Dental Clinic"
+        android:layout_height="40dp"
+        android:alpha="0.6"
+        android:layout_below="@+id/navjeevan"
+        android:textSize="14sp"
+        android:textColor="#A52A2A"
+        android:layout_alignStart="@+id/navjeevan"
+        android:layout_marginTop="19dp"
+        android:id="@+id/dental"
+        android:layout_width="140dp" />
+
+    <Button
+        android:text="Siddhi V "
+        android:layout_height="40dp"
+        android:layout_below="@+id/dental"
+        android:layout_alignEnd="@+id/dental"
+        android:alpha="0.6"
+        android:textColor="#A52A2A"
+        android:layout_marginTop="20dp"
+        android:id="@+id/siddhivinayak"
+        android:layout_width="140dp" />
+
+    <TextView
+        android:text="Hospitals"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/hospital_heading"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:layout_marginTop="13dp"
+        android:layout_below="@+id/alert_image"
+        android:layout_toStartOf="@+id/alert_image"
+        android:layout_marginEnd="28dp" />
+
+    <TextView
+        android:text="+91 (101)"
+        android:layout_width="wrap_content"
+        android:layout_alignTop="@+id/firetruck_icon"
+        android:gravity="center"
+        android:textColor="#00008B"
+        android:layout_alignStart="@+id/ambulance_contact"
+        android:id="@+id/firetruck_contact"
+        android:layout_height="35dp" />
+
+    <TextView
+        android:text="Emergency "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:layout_above="@+id/urgent_services"
+        android:layout_toEndOf="@+id/alert_image"
+        android:layout_marginStart="19dp" />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:srcCompat="@drawable/police_icon"
+        android:id="@+id/police_icon"
+        android:layout_alignTop="@+id/igm"
+        android:layout_toEndOf="@+id/igm"
+        android:layout_marginStart="49dp" />
+
+    <TextView
+        android:text="+91 (102)"
+        android:layout_width="wrap_content"
+        android:gravity="center"
+        android:textColor="#00008B"
+        android:id="@+id/police_contact"
+        android:layout_height="35dp"
+        android:layout_alignTop="@+id/police_icon"
+        android:layout_toEndOf="@+id/police_icon"
+        android:layout_marginStart="10dp" />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:srcCompat="@drawable/urgentservices"
+        android:id="@+id/urgent_services"
+        android:layout_above="@+id/igm"
+        android:layout_toEndOf="@+id/police_icon" />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:srcCompat="@drawable/firetruck_icon"
+        android:id="@+id/firetruck_icon"
+        android:layout_alignTop="@+id/dental"
+        android:layout_alignEnd="@+id/ambulance_icon" />
+
+    <ImageView
+        app:srcCompat="@drawable/women_safety"
+        android:id="@+id/womensafety"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignTop="@+id/siddhivinayak"
+        android:layout_alignStart="@+id/firetruck_icon" />
+
+    <TextView
+        android:text="+91 (1091) "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/womensafety"
+        android:gravity="center"
+        android:textColor="#00008B"
+        android:layout_alignStart="@+id/firetruck_contact"
+        android:id="@+id/textView14" />
+
+    <TextView
+        android:text="+91 (103) "
+        android:layout_width="wrap_content"
+        android:gravity="center"
+        android:textColor="#00008B"
+        android:id="@+id/ambulance_contact"
+        android:layout_height="25dp"
+        android:layout_alignBaseline="@+id/navjeevan"
+        android:layout_alignBottom="@+id/navjeevan"
+        android:layout_alignStart="@+id/police_contact" />
+
+    <ImageView
+        app:srcCompat="@drawable/ambulance_icon"
+        android:id="@+id/ambulance_icon"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_alignTop="@+id/navjeevan"
+        android:layout_alignEnd="@+id/police_icon" />
+
+</RelativeLayout>

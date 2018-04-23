@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background = "@drawable/background"
+    tools:context="com.example.raman.lastpass_project.Login">
+
+    <TextView
+        android:text="Password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:id="@+id/TV_pass"
+        android:textSize="18sp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:layout_below="@+id/TV_Username"
+        android:layout_alignStart="@+id/TV_Username" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/user"
+        android:layout_alignBaseline="@+id/TV_Username"
+        android:layout_alignBottom="@+id/TV_Username"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/lastname"
+        android:layout_width="160dp"
+        android:hint="Last Name"
+        android:layout_alignBaseline="@+id/firstname"
+        android:layout_alignBottom="@+id/firstname"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/firstname"
+        android:layout_width="160dp"
+        android:hint="First Name"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/usernamesup"
+        android:hint="Username"
+        android:layout_below="@+id/lastname"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/firstname" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:layout_below="@+id/usernamesup"
+        android:layout_alignParentStart="true"
+        android:id="@+id/passwordsup"
+        android:layout_alignEnd="@+id/usernamesup"
+        android:hint="Password" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/pass"
+        android:layout_alignTop="@+id/TV_pass"
+        android:layout_toEndOf="@+id/login"
+        android:layout_alignStart="@+id/user" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:layout_below="@+id/passwordsup"
+        android:layout_alignParentStart="true"
+        android:id="@+id/confirmpass"
+        android:hint="Password"
+        android:layout_toStartOf="@+id/lastname" />
+
+    <TextView
+        android:text="Username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="24dp"
+        android:id="@+id/TV_Username"
+        android:textSize="18sp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <Switch
+        android:text="NM   "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/NM"
+        android:layout_below="@+id/confirmpass"
+        android:layout_alignStart="@+id/TV_pass" />
+
+    <Button
+        android:text="Sign up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/signup"
+        android:background="#008080"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/login" />
+
+    <Button
+        android:text="Login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/login"
+        android:background="#008080"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_marginStart="29dp"
+        android:layout_below="@+id/pass"
+        android:layout_toEndOf="@+id/TV_Username" />
+
+    <CheckBox
+        android:text="Remember me"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/remember"
+        android:layout_marginTop="14dp"
+        android:layout_below="@+id/login"
+        android:layout_toEndOf="@+id/TV_Username" />
+
+    <Button
+        android:text="I"
+        android:layout_alignBottom="@+id/remember"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="13dp"
+        android:id="@+id/quick"
+        android:alpha="0.4"
+        android:layout_height="40dp"
+        android:layout_width="50dp" />
+
+</RelativeLayout>

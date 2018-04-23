@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_hotelslist"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/eat_background1"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.raman.lastpass_project.hotelslist">
+
+    <TextView
+        android:text="Banks and ATM"
+        android:textSize="32sp"
+        android:textColor="#000011"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="serif-monospace"
+        android:layout_marginTop="18dp"
+        android:textStyle="bold"
+        android:id="@+id/bankheading" />
+
+    <TextView
+        android:text="SBI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:fontFamily="casual"
+        android:textStyle="bold"
+        android:id="@+id/textView28"
+        android:layout_alignBaseline="@+id/textView27"
+        android:layout_alignBottom="@+id/textView27"
+        android:layout_alignStart="@+id/textView25" />
+
+    <TextView
+        android:text="ICICI ATM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:fontFamily="casual"
+        android:textStyle="bold"
+        android:layout_alignTop="@+id/textView29"
+        android:layout_alignStart="@+id/textView27"
+        android:id="@+id/textView30" />
+
+    <TextView
+        android:text="BOI ATM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView32"
+        android:textSize="16sp"
+        android:fontFamily="casual"
+        android:textStyle="bold"
+        android:layout_alignBaseline="@+id/textView31"
+        android:layout_alignBottom="@+id/textView31"
+        android:layout_alignStart="@+id/textView30" />
+
+    <TextView
+        android:text="ICICI Bank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView29"
+        android:textSize="16sp"
+        android:fontFamily="casual"
+        android:textStyle="bold"
+        android:layout_marginTop="34dp"
+        android:layout_below="@+id/textView28"
+        android:layout_alignStart="@+id/textView28" />
+
+    <TextView
+        android:text="HDFC Bank ATM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:fontFamily="casual"
+        android:textStyle="bold"
+        android:id="@+id/textView26"
+        android:layout_alignBaseline="@+id/textView25"
+        android:layout_alignBottom="@+id/textView25"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="15dp" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/cash"
+        android:id="@+id/atmicon"
+        android:layout_alignTop="@+id/bankicon"
+        android:layout_alignEnd="@+id/textView30" />
+
+    <TextView
+        android:text="BOI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="37dp"
+        android:textSize="16sp"
+        android:fontFamily="casual"
+        android:textStyle="bold"
+        android:id="@+id/textView31"
+        android:layout_below="@+id/textView29"
+        android:layout_alignStart="@+id/textView29" />
+
+    <TextView
+        android:text="Central Bank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="132dp"
+        android:textSize="16sp"
+        android:fontFamily="casual"
+        android:textStyle="bold"
+        android:id="@+id/textView25"
+        android:layout_below="@+id/bankheading"
+        android:layout_alignStart="@+id/bankheading" />
+
+    <ImageView
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/banking"
+        android:id="@+id/bankicon"
+        android:layout_width="50dp"
+        android:layout_below="@+id/bankheading"
+        android:layout_toEndOf="@+id/textView28"
+        android:layout_marginTop="33dp" />
+
+    <TextView
+        android:text="SBI ATM "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:fontFamily="casual"
+        android:textStyle="bold"
+        android:layout_marginTop="33dp"
+        android:id="@+id/textView27"
+        android:layout_below="@+id/textView26"
+        android:layout_alignStart="@+id/textView26" />
+</RelativeLayout>

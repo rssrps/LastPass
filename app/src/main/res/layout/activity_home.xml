@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/home_background"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.raman.lastpass_project.Home">
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:srcCompat="@drawable/stay"
+        android:id="@+id/stay"
+        android:layout_alignTop="@+id/eat"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:srcCompat="@drawable/shops"
+        android:layout_marginEnd="18dp"
+        android:id="@+id/shopping"
+        android:layout_alignTop="@+id/stay"
+        android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:srcCompat="@drawable/nearby1"
+        android:id="@+id/nearby"
+        android:layout_alignTop="@+id/banking"
+        android:layout_alignStart="@+id/stay" />
+
+    <TextView
+        android:text="Eat"
+        android:layout_height="wrap_content"
+        android:id="@+id/Eat_text"
+        android:layout_width="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="20sp"
+        android:layout_marginStart="25dp"
+        android:layout_marginBottom="11dp"
+        android:layout_above="@+id/stay"
+        android:layout_alignStart="@+id/eat" />
+
+    <TextView
+        android:text="Stay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:id="@+id/Stay_Textview"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:layout_alignBaseline="@+id/Eat_text"
+        android:layout_alignBottom="@+id/Eat_text"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="Shop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:id="@+id/Shop_Textview"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:layout_alignBaseline="@+id/Stay_Textview"
+        android:layout_alignBottom="@+id/Stay_Textview"
+        android:layout_alignStart="@+id/shopping"
+        android:layout_marginStart="15dp" />
+
+    <TextView
+        android:text="Banking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_marginTop="15dp"
+        android:id="@+id/Banking_Textview"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:layout_below="@+id/banking"
+        android:layout_alignEnd="@+id/banking" />
+
+    <TextView
+        android:text="Nearby "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:id="@+id/Nearby_textview"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:layout_alignBaseline="@+id/Banking_Textview"
+        android:layout_alignBottom="@+id/Banking_Textview"
+        android:layout_alignEnd="@+id/nearby" />
+
+    <TextView
+        android:text="Alert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:id="@+id/Emergency_Textview"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:layout_alignBaseline="@+id/Nearby_textview"
+        android:layout_alignBottom="@+id/Nearby_textview"
+        android:layout_alignEnd="@+id/Shop_Textview" />
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:srcCompat="@drawable/eat"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="107dp"
+        android:id="@+id/eat"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:srcCompat="@drawable/banking"
+        android:id="@+id/banking"
+        android:layout_marginTop="48dp"
+        android:layout_below="@+id/eat"
+        android:layout_alignStart="@+id/eat" />
+
+
+
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/searchbox"
+        android:hint="Search"
+        android:cursorVisible="false"
+        style="@style/Widget.AppCompat.EditText"
+        android:layout_width="160dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/Eat_text" />
+
+    <ImageView
+        app:srcCompat="@drawable/account"
+        android:id="@+id/account"
+        android:layout_above="@+id/account_textView"
+        android:layout_alignEnd="@+id/Emergency"
+        android:layout_width="40dp"
+        android:layout_height="40dp" />
+
+    <TextView
+        android:text="Account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/account_textView"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/account" />
+
+    <TextView
+        android:text="Add Place"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/addplace_text"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/Nearby_textview"
+        android:layout_below="@+id/nextlevel" />
+
+    <ImageView
+        app:srcCompat="@drawable/add"
+        android:id="@+id/add"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/addplace_text"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        app:srcCompat="@drawable/helpicon"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/helpicon"
+        android:layout_width="20dp"
+        android:layout_height="20dp" />
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:srcCompat="@drawable/emergency1"
+        android:id="@+id/Emergency"
+        android:layout_alignTop="@+id/nearby"
+        android:layout_alignStart="@+id/shopping" />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:srcCompat="@drawable/sort"
+        android:id="@+id/nextlevel"
+        android:layout_above="@+id/Filter_text"
+        android:layout_alignStart="@+id/Banking_Textview" />
+
+    <TextView
+        android:text="Filter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Filter_text"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/nextlevel" />
+
+
+
+</RelativeLayout>

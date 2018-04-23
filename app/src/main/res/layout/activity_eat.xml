@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_eat"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@drawable/eat_background1"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.raman.lastpass_project.eat">
+
+    <ImageView
+        app:srcCompat="@drawable/eat"
+        android:id="@+id/eat_logo"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="75dp"
+        android:layout_height="75dp" />
+
+    <TextView
+        android:text="Cafe"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:id="@+id/textView15"
+        android:textSize="17sp"
+        android:layout_above="@+id/Restaurant_logo"
+        android:layout_alignStart="@+id/cafe_logo"
+        android:layout_width="50dp" />
+
+    <Button
+        android:text="Chocolicious"
+        android:layout_width="wrap_content"
+        android:alpha="0.4"
+        android:textStyle="bold"
+        android:textColor="#A52A2A"
+        android:layout_below="@+id/cafe_logo"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="17dp"
+        android:id="@+id/chocolicious"
+        android:layout_height="40dp"
+        android:layout_toStartOf="@+id/eat_logo" />
+
+    <Button
+        android:text="BHARKA DEVI"
+        android:alpha="0.4"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:textStyle="bold"
+        android:textColor="#A52A2A"
+        android:layout_below="@+id/chocolicious"
+        android:layout_alignParentStart="true"
+        android:id="@+id/bharkadevi"
+        android:layout_alignEnd="@+id/chocolicious" />
+
+    <Button
+        android:text="PAYAL"
+        android:alpha="0.4"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:id="@+id/payal"
+        android:textStyle="bold"
+        android:textColor="#A52A2A"
+        android:layout_below="@+id/mansi"
+        android:layout_alignParentEnd="true"
+        android:layout_alignStart="@+id/mansi" />
+
+    <Button
+        android:text="SAHEBA"
+        android:alpha="0.4"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:id="@+id/saheba"
+        android:textStyle="bold"
+        android:textColor="#A52A2A"
+        android:layout_below="@+id/payal"
+        android:layout_alignParentEnd="true"
+        android:layout_alignStart="@+id/payal" />
+
+    <Button
+        android:text="MANSI"
+        android:layout_width="wrap_content"
+        android:alpha="0.4"
+        android:layout_height="40dp"
+        android:id="@+id/mansi"
+        android:textStyle="bold"
+        android:textColor="#A52A2A"
+        android:layout_alignBaseline="@+id/chocolicious"
+        android:layout_alignBottom="@+id/chocolicious"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/royalcake" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/bakery"
+        android:id="@+id/bakery_logo"
+        android:layout_below="@+id/hangout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp" />
+
+    <TextView
+        android:text="Bakeries"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hangout"
+        android:layout_alignStart="@+id/bakery_logo"
+        android:id="@+id/textView17" />
+
+    <Button
+        android:text="ROYAL CAKE"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:alpha="0.4"
+        android:id="@+id/royalcake"
+        android:textStyle="bold"
+        android:textColor="#A52A2A"
+        android:layout_marginTop="11dp"
+        android:layout_below="@+id/bakery_logo"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="JAIN BAKER"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:alpha="0.4"
+        android:id="@+id/jainbaker"
+        android:textStyle="bold"
+        android:textColor="#A52A2A"
+        android:layout_below="@+id/royalcake"
+        android:layout_alignStart="@+id/royalcake"
+        android:layout_alignEnd="@+id/royalcake" />
+
+    <Button
+        android:text="HANGOUT "
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:id="@+id/hangout"
+        android:layout_below="@+id/bharkadevi"
+        android:alpha="0.4"
+        android:textStyle="bold"
+        android:textColor="#A52A2A"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/bharkadevi" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/coffee"
+        android:layout_marginTop="14dp"
+        android:id="@+id/cafe_logo"
+        android:layout_marginStart="41dp"
+        android:layout_below="@+id/eat_logo"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Restaurants"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView16"
+        android:layout_alignTop="@+id/textView15"
+        android:layout_alignStart="@+id/mansi"
+        android:layout_marginStart="25dp" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/restaurant"
+        android:id="@+id/Restaurant_logo"
+        android:layout_marginEnd="10dp"
+        android:layout_above="@+id/chocolicious"
+        android:layout_alignEnd="@+id/textView16" />
+
+</RelativeLayout>

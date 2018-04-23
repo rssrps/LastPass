@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_shopslist"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@drawable/eat_background1"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.raman.lastpass_project.shopslist">
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:srcCompat="@drawable/shops"
+        android:id="@+id/shopicon"
+        android:layout_above="@+id/guru"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="41dp" />
+
+    <TextView
+        android:text="Shops"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="34sp"
+        android:fontFamily="casual"
+        android:textStyle="bold"
+        android:id="@+id/shopheading"
+        android:layout_marginTop="28dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="Royal gift "
+        android:layout_width="120dp"
+        android:alpha="0.6"
+        android:layout_height="40dp"
+        android:layout_below="@+id/guru"
+        android:layout_alignStart="@+id/guru"
+        android:layout_marginTop="46dp"
+        android:id="@+id/royaltouch" />
+
+    <Button
+        android:text="Vismai"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:alpha="0.6"
+        android:layout_alignTop="@+id/royaltouch"
+        android:layout_alignStart="@+id/ramhd"
+        android:id="@+id/vismai" />
+
+    <Button
+        android:text="Ajinkya"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:alpha="0.6"
+        android:layout_below="@+id/royaltouch"
+        android:layout_alignStart="@+id/royaltouch"
+        android:layout_marginTop="52dp"
+        android:id="@+id/ajinkya" />
+
+    <Button
+        android:text="Gajanan"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:alpha="0.6"
+        android:layout_alignTop="@+id/ajinkya"
+        android:layout_alignStart="@+id/vismai"
+        android:id="@+id/gajanan" />
+
+    <Button
+        android:text="Ram HDware"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:id="@+id/ramhd"
+        android:alpha="0.6"
+        android:layout_alignTop="@+id/guru"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="Hardware"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textSize="16sp"
+        android:id="@+id/textView20"
+        android:layout_alignBaseline="@+id/guru"
+        android:layout_alignBottom="@+id/guru"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Gift "
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView23"
+        android:textSize="19sp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:layout_alignBaseline="@+id/royaltouch"
+        android:layout_alignBottom="@+id/royaltouch"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Medical"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView24"
+        android:textSize="16sp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:layout_alignBaseline="@+id/ajinkya"
+        android:layout_alignBottom="@+id/ajinkya"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="Guru  Ply"
+        android:layout_marginTop="73dp"
+        android:id="@+id/guru"
+        android:layout_width="120dp"
+        android:alpha="0.6"
+        android:layout_height="40dp"
+        android:layout_below="@+id/shopheading"
+        android:layout_toEndOf="@+id/textView20"
+        android:layout_marginStart="13dp" />
+</RelativeLayout>
